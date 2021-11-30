@@ -13,3 +13,12 @@ int main(){
   cout << adiff(1000,280);
   cout << adiff(60,244);
 }
+int adiff(int A,int B)
+{
+    int C=abs(A-B);
+    while (C>180){
+        C=abs(C-360);
+    }
+    
+    return C;
+}
